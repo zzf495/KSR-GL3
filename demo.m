@@ -13,7 +13,7 @@ X=L2Norm(X')';
 number=25;
 [X1,Y1,X2,Y2] = splitData(X,Y,number);
 %% Select a algorithm
-algorithm=@KSR_GLLC;
+algorithm=@KSR_GLLR;
 %% Set the hyper-parameters
 %%% Notice: you should modify `options`, so as to tune the hyper-parameters
 options=defaultOptions([],...

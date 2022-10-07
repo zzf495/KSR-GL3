@@ -1,5 +1,5 @@
-function [results,results_iter,A] = KSR_GLLC(trainX,trainY,testX,testY,options)
-%% Implementation of KSR_GLLC
+function [results,results_iter,A] = KSR_GLLR(trainX,trainY,testX,testY,options)
+%% Implementation of KSR_GLLR
 %% intput:
 %%%     trainX:                     The traing samples, m*n1
 %%%     trainY:                     The labels of training samples, n1*1

@@ -13,7 +13,7 @@ X=L2Norm(X')';
 number=25;
 [X1,Y1,X2,Y2] = splitData(X,Y,number);
 %% Select a algorithm
-algorithm=@KSR_GLLR;
+algorithm=@KSR_GL3;
 %% Set the hyper-parameters
 %%% Notice: you should modify `options`, so as to tune the hyper-parameters
 options=defaultOptions([],...
@@ -21,7 +21,7 @@ options=defaultOptions([],...
                     'dim',100,...         %% The dimension reduced
                     't',10,...           %% The maximum iteration of GPI
                    'lambda1',2,...       %% The weight of L2,1 norm w.r.t Z
-                   'lambda2',1e-4,...    %% The weight of kernel norm w.r.t GLLR
+                   'lambda2',1e-4,...    %% The weight of kernel norm w.r.t GL3
                    'ker',4,...           %% The kernel, 1 = linear, 2 = rbf
                    'gamma',1,...         %% The parameter of rbf kernel
                    'rho',0.01,...         %% The weight of Lagrange
